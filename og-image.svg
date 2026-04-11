@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#0d1117"/>
+  <!-- Dot grid -->
+  <defs>
+    <pattern id="dots" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="1" fill="#30363d"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#dots)" opacity="0.6"/>
+  <!-- Left accent bar -->
+  <rect x="0" y="0" width="5" height="630" fill="#58a6ff"/>
+  <!-- Emoji -->
+  <text x="600" y="255" font-size="180" text-anchor="middle" dominant-baseline="middle">👨‍💻</text>
+  <!-- Name -->
+  <text x="600" y="390" font-family="system-ui,-apple-system,sans-serif" font-size="58" font-weight="700" fill="#ffffff" text-anchor="middle">Yannis Florin</text>
+  <!-- Title -->
+  <text x="600" y="455" font-family="system-ui,-apple-system,sans-serif" font-size="30" fill="#8b949e" text-anchor="middle">Software &amp; Electronics Engineer</text>
+  <!-- URL -->
+  <text x="600" y="560" font-family="monospace,sans-serif" font-size="22" fill="#58a6ff" text-anchor="middle">yonniss.github.io</text>
+</svg>
