@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="aero">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yannis Florin Ionica | Portfolio de software y electrónica</title>
+<meta name="description" content="Portfolio de Yannis Florin Ionica: estudiante de Ingeniería Informática en la URV y desarrollador de software y electrónica. Webs, ESP32, IoT y más, dentro de un escritorio de los 2000.">
+<meta name="author" content="Yannis Florin Ionica">
+<link rel="canonical" href="https://yonniss.github.io/">
+<meta name="robots" content="noindex">
+
+<!-- Favicon -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='27' font-size='27'>🧑‍💻</text></svg>">
+
+<!-- Open Graph -->
+<meta property="og:type"        content="website">
+<meta property="og:url"         content="https://yonniss.github.io">
+<meta property="og:title"       content="Yannis Florin Ionica | Portfolio de software y electrónica">
+<meta property="og:description" content="Portfolio de Yannis Florin Ionica: estudiante de Ingeniería Informática en la URV y desarrollador de software y electrónica. Webs, ESP32, IoT y más, dentro de un escritorio de los 2000.">
+<meta property="og:image"       content="https://yonniss.github.io/og-image.svg">
+<meta property="og:locale"      content="es_ES">
+
+<!-- Twitter Card -->
+<meta name="twitter:card"        content="summary">
+<meta name="twitter:title"       content="Yannis Florin Ionica | Portfolio de software y electrónica">
+<meta name="twitter:description" content="Portfolio de Yannis Florin Ionica: estudiante de Ingeniería Informática en la URV y desarrollador de software y electrónica. Webs, ESP32, IoT y más, dentro de un escritorio de los 2000.">
+<meta name="twitter:image"       content="https://yonniss.github.io/og-image.svg">
+
+<!-- JSON-LD: Person (Yannis Florin Ionica) — entidad canónica con sameAs cruzado a todas las plataformas -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://yonniss.github.io/#yannis",
+  "name": "Yannis Florin Ionica",
+  "givenName": "Yannis",
+  "additionalName": "Florin",
+  "familyName": "Ionica",
+  "alternateName": ["Yannis Ionica", "Yannis Florin"],
+  "jobTitle": "Founder & Software Engineer",
+  "description": "Desarrollador freelance de L'Ampolla, Tarragona. Webs para negocios, aplicaciones web a medida, hardware, electrónica e IoT. Fundador de IonicTech.",
+  "url": "https://yonniss.github.io",
+  "image": "https://yonniss.github.io/og-image.svg",
+  "nationality": {
+    "@type": "Country",
+    "name": "España"
+  },
+  "homeLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "L'Ampolla",
+      "addressRegion": "Cataluña",
+      "addressCountry": "ES"
+    }
+  },
+  "knowsAbout": [
+    "Desarrollo Web",
+    "JavaScript",
+    "Python",
+    "HTML",
+    "CSS",
+    "Hardware",
+    "Electrónica",
+    "IoT",
+    "Arduino",
+    "ESP32",
+    "Linux",
+    "Raspberry Pi",
+    "KiCad",
+    "PCB Design"
+  ],
+  "worksFor": {
+    "@type": "Organization",
+    "@id": "https://ionictech.dev/#org",
+    "name": "IonicTech",
+    "url": "https://ionictech.dev",
+    "founder": {
+      "@id": "https://yonniss.github.io/#yannis"
+    }
+  },
+  "sameAs": [
+    "https://ionictech.dev",
+    "https://www.linkedin.com/in/yannis-florin-ionica-b22506258/",
+    "https://github.com/Yonniss",
+    "https://www.instagram.com/yannisflorin25/"
+  ]
+}
+</script>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="theme-aero.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;600&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('os')</script>
+<script src="main.js" defer></script>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="ga-meter" x1="0" x2="1"><stop offset="0" stop-color="#3cf05a"/><stop offset=".55" stop-color="#ffd23f"/><stop offset="1" stop-color="#ff4b2b"/></linearGradient>
+    <linearGradient id="gi-folder-b" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3c04f"/><stop offset="1" stop-color="#c9860f"/></linearGradient>
+    <linearGradient id="gi-folder-f" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe9a0"/><stop offset=".5" stop-color="#fdd25c"/><stop offset="1" stop-color="#eaa92a"/></linearGradient>
+    <linearGradient id="gi-paper" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#dce6f2"/></linearGradient>
+  </defs>
+  <symbol id="i-note" viewBox="0 0 32 32"><path d="M7 4h18v25H7z" fill="url(#gi-paper)" stroke="#5e7a9e"/><path d="M10 10h12M10 14h12M10 18h12M10 22h8" stroke="#3a6ad4"/><path d="M9 2v4M13 2v4M17 2v4M21 2v4" stroke="#444" stroke-width="1.5"/></symbol>
+  <symbol id="i-folder" viewBox="0 0 32 32"><path d="M3 7h9l2 2h15v17H3z" fill="url(#gi-folder-b)" stroke="#a86d0c" stroke-width=".8"/><path d="M3 12h26v14H3z" fill="url(#gi-folder-f)" stroke="#c98a1a" stroke-width=".8"/><path d="M3 12h26v2H3z" fill="#fff" opacity=".45"/></symbol>
+  <symbol id="i-pc" viewBox="0 0 32 32"><rect x="4" y="4" width="24" height="18" rx="2" fill="#cdd6e3" stroke="#59677a"/><rect x="7" y="7" width="18" height="12" fill="#3a8cf5"/><path d="M7 15q5-5 9-1t9-2v7H7z" fill="#5daf2c"/><path d="M12 22h8l2 6H10z" fill="#9aa7b8" stroke="#59677a"/></symbol>
+  <symbol id="i-pdf" viewBox="0 0 32 32"><path d="M7 3h13l5 5v21H7z" fill="#fff" stroke="#888"/><path d="M20 3v5h5" fill="#ddd" stroke="#888"/><rect x="5" y="16" width="17" height="9" fill="#c8102e"/><text x="13.5" y="23" font-size="7" font-weight="700" fill="#fff" text-anchor="middle" font-family="Tahoma,sans-serif">CV</text></symbol>
+  <symbol id="i-player" viewBox="0 0 32 32"><rect x="3" y="7" width="26" height="18" rx="2" fill="#2b2f36" stroke="#111"/><rect x="6" y="10" width="14" height="7" fill="#000"/><path d="M7 16l2-4 2 3 2-5 2 4 2-2 2 3" stroke="#3cf05a" fill="none"/><circle cx="24.5" cy="13.5" r="3" fill="#9aa"/><rect x="6" y="20" width="20" height="2" fill="#666"/></symbol>
+  <symbol id="i-cube" viewBox="0 0 32 32"><path d="M16 3l12 6.5L16 16 4 9.5z" fill="#fff" stroke="#111"/><path d="M4 9.5L16 16v13L4 22.5z" fill="#e8312f" stroke="#111"/><path d="M28 9.5L16 16v13l12-6.5z" fill="#1f6fe0" stroke="#111"/><path d="M8 7.3l12 6.5M12 5.2l12 6.5M8 11.7v13M12 13.8v13M20 13.8v13M24 11.7v13M4 14l12 6.5M4 18.3l12 6.5M28 14l-12 6.5M28 18.3l-12 6.5" stroke="#111" stroke-width=".7" fill="none"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 32 32"><rect x="3" y="8" width="26" height="17" fill="#fff" stroke="#5e7a9e"/><path d="M3 8l13 10L29 8" fill="none" stroke="#5e7a9e"/><rect x="22" y="10" width="5" height="5" fill="#e8312f"/></symbol>
+  <symbol id="i-bin" viewBox="0 0 32 32"><path d="M8 9h16l-1.6 19H9.6z" fill="#dfeaf5" stroke="#5b7a96"/><rect x="7" y="6" width="18" height="3" rx="1" fill="#b8cde0" stroke="#5b7a96"/><path d="M13 12v13M16 12v13M19 12v13" stroke="#8aa5bf"/><path d="M11 15l4 4M18 14l-3 6" stroke="#c8102e" stroke-width="1.2"/></symbol>
+  <symbol id="i-html" viewBox="0 0 32 32"><path d="M7 3h13l5 5v21H7z" fill="#fff" stroke="#888"/><path d="M20 3v5h5" fill="#ddd" stroke="#888"/><path d="M13 15l-3 3 3 3M19 15l3 3-3 3M17 14l-2 8" stroke="#e8701a" fill="none" stroke-width="1.4"/></symbol>
+  <symbol id="i-web" viewBox="0 0 32 32"><circle cx="16" cy="16" r="12" fill="#4b97f0" stroke="#1d4f9c"/><path d="M6 12q4 2 6 0t5 2 3 6-2 6M18 5q-1 4 2 5t6 3" fill="#5daf2c" stroke="none"/><path d="M4 16h24M16 4c-6 6-6 18 0 24M16 4c6 6 6 18 0 24" stroke="#e8f2ff" fill="none" stroke-width=".8"/></symbol>
+  <symbol id="i-bolt" viewBox="0 0 32 32"><rect x="4" y="4" width="24" height="24" rx="5" fill="#0d4fc4"/><path d="M18 6l-8 12h6l-2 8 8-12h-6z" fill="#ffd23f"/></symbol>
+  <symbol id="i-chip" viewBox="0 0 32 32"><rect x="9" y="9" width="14" height="14" rx="1" fill="#222"/><path d="M12 9V4M16 9V4M20 9V4M12 28v-5M16 28v-5M20 28v-5M9 12H4M9 16H4M9 20H4M28 12h-5M28 16h-5M28 20h-5" stroke="#b9b9b9" stroke-width="2"/><circle cx="12" cy="12" r="1.2" fill="#888"/></symbol>
+  <symbol id="i-term" viewBox="0 0 32 32"><rect x="3" y="6" width="26" height="20" rx="2" fill="#1b1b1b" stroke="#555"/><rect x="3" y="6" width="26" height="3" fill="#555"/><path d="M7 13l4 3-4 3M13 20h6" stroke="#ddd" fill="none" stroke-width="1.5"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 32 32"><rect x="3" y="3" width="26" height="26" rx="3" fill="#2a1f4d"/><path d="M19 7a10 10 0 1 0 6 14A8 8 0 0 1 19 7z" fill="#f7e9a0"/><circle cx="9" cy="9" r="1" fill="#fff"/><circle cx="24" cy="10" r=".8" fill="#fff"/></symbol>
+  <symbol id="i-printer" viewBox="0 0 32 32"><path d="M5 5h22v4H5z" fill="#9aa7b8" stroke="#59677a"/><path d="M5 9h3v18H5zM24 9h3v18h-3z" fill="#cdd6e3" stroke="#59677a"/><path d="M8 25h16v2H8z" fill="#59677a"/><path d="M12 25v-6l4-3 4 3v6z" fill="#ffb347" stroke="#a15c00"/><path d="M15 9h2v4h-2z" fill="#333"/></symbol>
+  <symbol id="i-link" viewBox="0 0 32 32"><rect x="4" y="4" width="24" height="24" rx="3" fill="#fff" stroke="#5e7a9e"/><path d="M13 19l6-6M11 16l-2 2a3 3 0 0 0 5 5l2-2M21 16l2-2a3 3 0 0 0-5-5l-2 2" stroke="#215dc6" stroke-width="2" fill="none"/></symbol>
+</svg>
+
+<main class="desktop" id="desktop">
+  <svg class="wallpaper" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <!-- El Delta de l'Ebre, más o menos -->
+    <g class="wp-aero">
+      <image href="img/aero/wallpaper.jpg" width="1600" height="1000" preserveAspectRatio="xMidYMid slice"/>
+      <image class="bubble" href="img/aero/bubble.png" x="230" y="430" width="110" height="110"/>
+      <image class="bubble" href="img/aero/bubble.png" x="380" y="520" width="50" height="50"/>
+      <image class="bubble" href="img/aero/bubble.png" x="700" y="380" width="70" height="70"/>
+      <image class="bubble" href="img/aero/bubble.png" x="1020" y="540" width="140" height="140"/>
+      <image class="bubble" href="img/aero/bubble.png" x="1240" y="420" width="60" height="60"/>
+      <image class="bubble" href="img/aero/bubble.png" x="560" y="760" width="90" height="90"/>
+      <image class="bubble" href="img/aero/bubble.png" x="880" y="820" width="44" height="44"/>
+      <image class="bubble" href="img/aero/bubble.png" x="1460" y="560" width="96" height="96"/>
+      <image class="bubble" href="img/aero/bubble.png" x="120" y="820" width="64" height="64"/>
+    </g>
+  </svg>
+
+  <nav class="icons" aria-label="Escritorio">
+    <a class="icon" href="../"><svg><use href="#i-web"/></svg><span>Volver a la web</span></a>
+    <button class="icon" data-open="w-about"><svg><use href="#i-note"/></svg><span>sobre_mi.txt</span></button>
+    <button class="icon" data-open="w-projects"><svg><use href="#i-folder"/></svg><span>Proyectos</span></button>
+    <button class="icon" data-open="w-system"><svg><use href="#i-pc"/></svg><span>Mi PC</span></button>
+    <a class="icon" href="../CV%20provisional.pdf" target="_blank" rel="noopener"><svg><use href="#i-pdf"/></svg><span>CV.pdf</span></a>
+    <button class="icon" data-open="w-player"><svg><use href="#i-player"/></svg><span>Reproductor</span></button>
+    <button class="icon" data-open="w-cube"><svg><use href="#i-cube"/></svg><span>Cubo.exe</span></button>
+    <button class="icon" data-open="w-mail"><svg><use href="#i-mail"/></svg><span>Correo</span></button>
+    <button class="icon" data-open="w-bin"><svg><use href="#i-bin"/></svg><span>Papelera</span></button>
+  </nav>
+
+  <div class="nameplate">
+    <h1>Yannis Florin Ionica</h1>
+    <p>Software y electrónica. Portfolio, edición 2026</p>
+  </div>
+
+  <aside class="gadgets" aria-label="Gadgets">
+    <div class="gadget g-clock"><svg viewBox="0 0 100 100" aria-hidden="true">
+      <image href="img/aero/clock-face.png" width="100" height="100"/>
+      <line class="h" x1="50" y1="50" x2="50" y2="29" stroke="#1d2e3d" stroke-width="4" stroke-linecap="round"/>
+      <line class="m" x1="50" y1="50" x2="50" y2="17" stroke="#1d2e3d" stroke-width="3" stroke-linecap="round"/>
+      <line class="s" x1="50" y1="56" x2="50" y2="13" stroke="#e04b00" stroke-width="1.5" stroke-linecap="round"/>
+      <circle cx="50" cy="50" r="3.5" fill="#1d2e3d"/>
+      <image href="img/aero/clock-glass.png" width="100" height="100"/>
+    </svg></div>
+    <div class="gadget g-np">
+      <p class="g-title">Ahora suena</p>
+      <p class="g-track" data-idle="Silencio. Abre el Reproductor y dale al ▶." data-paused="En pausa.">Silencio. Abre el Reproductor y dale al ▶.</p>
+      <button class="btn" data-open="w-player">Reproductor</button>
+    </div>
+    <div class="gadget g-meter">
+      <p class="g-title">Niveles</p>
+      <svg viewBox="0 0 120 70" aria-hidden="true">
+        <path d="M10 62A50 50 0 0 1 110 62" stroke="rgba(0,0,0,.35)" stroke-width="10" fill="none"/>
+        <path d="M10 62A50 50 0 0 1 110 62" stroke="url(#ga-meter)" stroke-width="7" fill="none"/>
+        <line class="needle n-caf" x1="60" y1="62" x2="60" y2="20" stroke="#8fe7ff" stroke-width="3" stroke-linecap="round"/>
+        <line class="needle n-rock" x1="60" y1="62" x2="60" y2="16" stroke="#ff7a45" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="60" cy="62" r="5" fill="#e9f3fb" stroke="#2b3f54"/>
+      </svg>
+      <p class="g-legend"><span class="caf">Cafeína</span><span class="rock">Rock</span></p>
+    </div>
+  </aside>
+
+  <!-- ═══ sobre_mi.txt ═══ -->
+  <section class="win" id="w-about" data-icon="i-note" data-short="sobre_mi.txt" data-pos="130,24" style="--w:36rem" aria-labelledby="t-about" tabindex="-1">
+    <header class="titlebar"><svg class="ti"><use href="#i-note"/></svg><h2 id="t-about">sobre_mi.txt - Bloc de notas</h2>
+      <div class="wbtns"><button class="min" aria-label="Minimizar"></button><button class="max" aria-label="Maximizar"></button><button class="close" aria-label="Cerrar"></button></div></header>
+    <div class="menubar" aria-hidden="true"><span>Archivo</span><span>Edición</span><span>Formato</span><span>Ver</span><span>Ayuda</span></div>
+    <div class="wbody">
+      <div class="notepad">
+        <p>Hola, soy Yannis.</p>
+        <p>Estudio Ingeniería Informática en la Universitat Rovira i Virgili y vivo en L'Ampolla, un pueblo del Delta de l'Ebre (sí, el del fondo de pantalla).</p>
+        <p>Me muevo entre el software y el hardware: hago webs y aplicaciones, diseño PCBs en KiCad, programo ESP32 e imprimo en 3D las carcasas. Trabajo como freelance haciendo webs para negocios y estoy montando <a href="https://ionictech.dev" target="_blank" rel="noopener">IonicTech</a>, mi proyecto para digitalizar negocios pequeños.</p>
+        <p>Fuera de la pantalla: cubo de Rubik (media sub-20 en 3×3), ajedrez (900 ELO, subiendo) y rock a todo volumen, del clásico al metal.</p>
+        <p>Hablo español, catalán, rumano e inglés, y estoy aprendiendo japonés.</p>
+        <p>Abre la carpeta Proyectos para ver lo que he hecho, o el Correo si quieres hablar.</p>
+      </div>
+    </div>
+    <div class="statusbar">Lín 1, col 1</div>
+  </section>
+
+  <!-- ═══ Proyectos ═══ -->
+  <section class="win" id="w-projects" data-icon="i-folder" data-short="Proyectos" data-pos="560,130" style="--w:40rem" aria-labelledby="t-projects" tabindex="-1">
+    <header class="titlebar"><svg class="ti"><use href="#i-folder"/></svg><h2 id="t-projects">Proyectos</h2>
+      <div class="wbtns"><button class="min" aria-label="Minimizar"></button><button class="max" aria-label="Maximizar"></button><button class="close" aria-label="Cerrar"></button></div></header>
+    <div class="address"><span aria-hidden="true">Dirección</span><span>C:\Documents and Settings\Yannis\Proyectos</span></div>
+    <div class="wbody explorer">
+      <aside class="taskpane">
+        <section><h3>Otros sitios</h3>
+          <ul>
+            <li><a href="https://github.com/Yonniss" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://ionictech.dev" target="_blank" rel="noopener">IonicTech</a></li>
+          </ul>
+        </section>
+        <section><h3>Detalles</h3><ul><li>6 proyectos. Haz clic en uno para ver sus propiedades.</li></ul></section>
+      </aside>
+      <div class="files">
+        <button class="icon" data-open="w-p-ionic"><svg><use href="#i-bolt"/></svg><span>IonicTech</span></button>
+        <button class="icon" data-open="w-p-alex"><svg><use href="#i-web"/></svg><span>Just Alex</span></button>
+        <button class="icon" data-open="w-p-robot"><svg><use href="#i-chip"/></svg><span>Smart Robot Car</span></button>
+        <button class="icon" data-open="w-p-term"><svg><use href="#i-term"/></svg><span>TermTimer</span></button>
+        <button class="icon" data-open="w-p-dream"><svg><use href="#i-moon"/></svg><span>Dreamcore Archive</span></button>
+        <button class="icon" data-open="w-p-3d"><svg><use href="#i-printer"/></svg><span>Prototipos 3D</span></button>
+      </div>
+    </div>
+    <div class="statusbar">6 objetos</div>
+  </section>
+
+  <section class="win props" id="w-p-ionic" data-icon="i-bolt" data-short="IonicTech" style="--w:28rem" aria-labelledby="t-p-ionic" tabindex="-1">
+    <header class="titlebar"><svg class="ti"><use href="#i-bolt"/></svg><h2 id="t-p-ionic">Propiedades de IonicTech</h2>
+      <div class="wbtns"><button class="min" aria-label="Minimizar"></button><button class="max" aria-label="Maximizar"></button><button class="close" aria-label="Cerrar"></button></div></header>
+    <div class="wbody">
+      <div class="head"><svg><use href="#i-bolt"/></svg><div><h3>IonicTech</h3><p>Proyecto propio, en desarrollo</p></div></div>
+      <dl>
+        <dt>Descripción</dt><dd>Plataforma para digitalizar pequeños negocios: webs ligeras, sin dependencias pesadas, optimizadas para SEO local y rendimiento.</dd>
+        <dt>Tecnologías</dt><dd>JavaScript, HTML5, CSS3, SEO, rendimiento web</dd>
+      </dl>
+      <div class="dlg-actions"><a class="btn" href="https://ionictech.dev" target="_blank" rel="noopener">Abrir ionictech.dev</a><button class="btn" data-close>Aceptar</button></div>
+    </div>
+  </section>
+
+  <section class="win props" id="w-p-alex" data-icon="i-web" data-short="Just Alex" style="--w:28rem" aria-labelledby="t-p-alex" tabindex="-1">
+    <header class="titlebar"><svg class="ti"><use href="#i-web"/></svg><h2 id="t-p-alex">Propiedades de Just Alex</h2>
+      <div class="wbtns"><button class="min" aria-label="Minimizar"></button><button class="max" aria-label="Maximizar"></button><button class="close" aria-label="Cerrar"></button></div></header>
+    <div class="wbody">
+      <div class="head"><svg><use href="#i-web"/></svg><div><h3>Just Alex</h3><p>Web de un restaurante, en producción</p></div></div>
+      <dl>
+        <dt>Descripción</dt><dd>La web oficial del restaurante familiar: diseño, despliegue y mantenimiento, con SEO local. Mi primer proyecto freelance en producción.</dd>
+        <dt>Tecnologías</dt><dd>HTML, CSS, JavaScript, SEO</dd>
+      </dl>
+      <div class="dlg-actions"><a class="btn" href="https://justalex.es" target="_blank" rel="noopener">Abrir justalex.es</a><button class="btn" data-close>Aceptar</button></div>
+    </div>
+  </section>
+
+  <section class="win props" id="w-p-robot" data-icon="i-chip" data-short="Robot Car" style="--w:28rem" aria-labelledby="t-p-robot" tabindex="-1">
+    <header class="titlebar"><svg class="ti"><use href="#i-chip"/></svg><h2 id="t-p-robot">Propiedades de Smart Robot Car</h2>
+      <div class="wbtns"><button class="min" aria-label="Minimizar"></button><button class="max" aria-label="Maximizar"></button><button class="close" aria-label="Cerrar"></button></div></header>
+    <div class="wbody">
+      <div class="head"><svg><use href="#i-chip"/></svg><div><h3>Smart Robot Car</h3><p>Hardware y app móvil</p></div></div>
+      <dl>
+        <dt>Descripción</dt><dd>Un coche robótico con ESP32 y una app Android propia que le manda comandos de movimiento por Bluetooth.</dd>
+        <dt>Tecnologías</dt><dd>C++, ESP32, Bluetooth LE, MIT App Inventor</dd>
+      </dl>
+      <div class="dlg-actions"><a class="btn" href="https://github.com/Yonniss/RoboCar" target="_blank" rel="noopener">Ver en GitHub</a><button class="btn" data-close>Aceptar</button></div>
+    </div>
+  </section>
+
+  <section class="win props" id="w-p-term" data-icon="i-term" data-short="TermTimer" style="--w:28rem" aria-labelledby="t-p-term" tabindex="-1">
+    <header class="titlebar"><svg class="ti"><use href="#i-term"/></svg><h2 id="t-p-term">Propiedades de TermTimer</h2>
+      <div class="wbtns"><button class="min" aria-label="Minimizar"></button><button class="max" aria-label="Maximizar"></button><button class="close" aria-label="Cerrar"></button></div></header>
+    <div class="wbody">
+      <div class="head"><svg><use href="#i-term"/></svg><div><h3>TermTimer</h3><p>Herramienta de terminal</p></div></div>
+      <dl>
+        <dt>Descripción</dt><dd>Timer de speedcubing para la terminal: mezclas para 8 puzzles (de 2×2 a 7×7, Megaminx y Pyraminx), estadísticas ao5 y ao12, penalizaciones DNF/+2 y detección de PB. Cubo.exe, en el escritorio, es su hermano pequeño.</dd>
+        <dt>Tecnologías</dt><dd>Python, JSON, CLI</dd>
+      </dl>
+      <div class="dlg-actions"><a class="btn" href="https://github.com/Yonniss/termtimer" target="_blank" rel="noopener">Ver en GitHub</a><button class="btn" data-close>Aceptar</button></div>
+    </div>
+  </section>
+
+  <section class="win props" id="w-p-dream" data-icon="i-moon" data-short="Dreamcore" style="--w:28rem" aria-labelledby="t-p-dream" tabindex="-1">
+    <header class="titlebar"><svg class="ti"><use href="#i-moon"/></svg><h2 id="t-p-dream">Propiedades de Dreamcore Archive</h2>
+      <div class="wbtns"><button class="min" aria-label="Minimizar"></button><button class="max" aria-label="Maximizar"></button><button class="close" aria-label="Cerrar"></button></div></header>
+    <div class="wbody">
+      <div class="head"><svg><use href="#i-moon"/></svg><div><h3>Dreamcore Archive</h3><p>Museo digital, bilingüe</p></div></div>
+      <dl>
+        <dt>Descripción</dt><dd>Un museo estático dedicado a la estética dreamcore y a la web antigua, con rocola de música, galería y navegación maximalista. Una habitación en la que crees haber estado, pero no recuerdas cuándo.</dd>
+        <dt>Tecnologías</dt><dd>HTML, CSS, JavaScript, YouTube API</dd>
+      </dl>
+      <div class="dlg-actions"><a class="btn" href="https://dreamcorearchive.org" target="_blank" rel="noopener">Abrir dreamcorearchive.org</a><button class="btn" data-close>Aceptar</button></div>
+    </div>
+  </section>
+
+  <section class="win props" id="w-p-3d" data-icon="i-printer" data-short="Prototipos 3D" style="--w:28rem" aria-labelledby="t-p-3d" tabindex="-1">
+    <header class="titlebar"><svg class="ti"><use href="#i-printer"/></svg><h2 id="t-p-3d">Propiedades de Prototipos 3D</h2>
+      <div class="wbtns"><button class="min" aria-label="Minimizar"></button><button class="max" aria-label="Maximizar"></button><button class="close" aria-label="Cerrar"></button></div></header>
+    <div class="wbody">
+      <div class="head"><svg><use href="#i-printer"/></svg><div><h3>Prototipos 3D</h3><p>Hardware</p></div></div>
+      <dl>
+        <dt>Descripción</dt><dd>Carcasas funcionales y prototipos para mis proyectos de electrónica, modelados en CAD e impresos en mi propia impresora 3D.</dd>
+        <dt>Tecnologías</dt><dd>Modelado CAD, impresión 3D, prototipado rápido</dd>
+      </dl>
+      <div class="dlg-actions"><button class="btn" data-close>Aceptar</button></div>
+    </div>
+  </section>
+
+  <!-- ═══ Mi PC: propiedades del sistema ═══ -->
+  <section class="win" id="w-system" data-icon="i-pc" data-short="Propiedades del sistema" style="--w:32rem" aria-labelledby="t-system" tabindex="-1">
+    <header class="titlebar"><svg class="ti"><use href="#i-pc"/></svg><h2 id="t-system">Propiedades del sistema</h2>
+      <div class="wbtns"><button class="min" aria-label="Minimizar"></button><button class="max" aria-label="Maximizar"></button><button class="close" aria-label="Cerrar"></button></div></header>
+    <div class="tabs" role="tablist">
+      <button role="tab" id="tab-general" aria-controls="pan-general" aria-selected="true">General</button>
+      <button role="tab" id="tab-hw" aria-controls="pan-hw" aria-selected="false">Hardware</button>
+      <button role="tab" id="tab-log" aria-controls="pan-log" aria-selected="false">Historial</button>
+    </div>
+    <div class="wbody" style="padding:0">
+      <div class="tabpanel" role="tabpanel" id="pan-general" aria-labelledby="tab-general">
+        <div class="sysinfo">
+          <span class="oslogo" aria-hidden="true">🧑‍💻</span>
+          <div>
+            <h3>Sistema</h3>
+            <p>Yannis OS, edición 2026</p>
+            <h3>Registrado a nombre de</h3>
+            <p>Yannis Florin Ionica<br>L'Ampolla, Tarragona</p>
+            <h3>Equipo</h3>
+            <p>Ingeniería Informática, Universitat Rovira i Virgili<br>Idiomas: español, catalán, rumano, inglés (B1) y japonés (aprendiendo)</p>
+            <h3>Créditos del tema Aero</h3>
+            <p class="credits">Fondo montado a partir de fotos de <a href="https://commons.wikimedia.org/wiki/File:Blue_sky_with_white_clouds_over_Egyptian_landscape_2026.jpg" target="_blank" rel="noopener">Serfezi</a> (CC BY 4.0) y <a href="https://commons.wikimedia.org/wiki/File:The_Lawn_After_A_Shower_(9161661782).jpg" target="_blank" rel="noopener">James Mann</a> (CC BY 2.0). Iconos <a href="https://github.com/KDE/oxygen-icons" target="_blank" rel="noopener">Oxygen</a> de KDE (LGPL-3.0).</p>
+          </div>
+        </div>
+      </div>
+      <div class="tabpanel tree" role="tabpanel" id="pan-hw" aria-labelledby="tab-hw">
+        <h3>Administrador de dispositivos</h3>
+        <details open><summary>Software</summary><ul><li>Python</li><li>C</li><li>SQL</li><li>Bash y Linux</li><li>JavaScript</li><li>HTML / CSS</li></ul></details>
+        <details open><summary>Hardware e ingeniería</summary><ul><li>ESP32</li><li>KiCad (diseño de PCB)</li><li>Impresión 3D y modelado CAD</li><li>Análisis de circuitos</li><li>Bluetooth LE</li></ul></details>
+        <details><summary>Web</summary><ul><li>Full-stack</li><li>SEO</li><li>Diseño responsive</li><li>Rendimiento web</li></ul></details>
+        <details><summary>Datos</summary><ul><li>Modelado estadístico</li><li>Limpieza de datos</li><li>Visualización</li><li>Google Analytics</li></ul></details>
+      </div>
+      <div class="tabpanel" role="tabpanel" id="pan-log" aria-labelledby="tab-log">
+        <h3>Experiencia</h3>
+        <ul class="log">
+          <li><b>Diseñador web freelance</b><span>Feb 2026 – hoy. Webs para negocios locales, del briefing al mantenimiento.</span></li>
+          <li><b>Staff y desarrollo digital, Just Alex</b><span>Dic 2025 – hoy (colaboro desde 2022). Hice la web del restaurante y echo una mano en sala.</span></li>
+        </ul>
+        <h3 style="margin-top:12px">Formación</h3>
+        <ul class="log">
+          <li><b>Grado en Ingeniería Informática, URV</b><span>Sep 2026 – hoy</span></li>
+          <li><b>Bachillerato de Ciencia y Tecnología</b><span>Institut de Camarles, 2024 – 2026</span></li>
+          <li><b><a href="https://hack4u.io/certificate/1820-4016-4110-2781" target="_blank" rel="noopener">Linux Introduction & Personalization</a></b><span>Hack4u Academy</span></li>
+          <li><b>Google Data Analytics Professional</b><span>Google, en curso</span></li>
+        </ul>
+      </div>
+      <div class="dlg-actions" style="margin:0 8px 8px"><a class="btn" href="../CV%20provisional.pdf" target="_blank" rel="noopener">Abrir CV</a><button class="btn" data-close>Aceptar</button></div>
+    </div>
+  </section>
+
+  <!-- ═══ Reproductor ═══ -->
+  <section class="win player" id="w-player" data-icon="i-player" data-short="Reproductor" style="--w:22rem" aria-labelledby="t-player" tabindex="-1">
+    <header class="titlebar"><svg class="ti"><use href="#i-player"/></svg><h2 id="t-player">Reproductor</h2>
+      <div class="wbtns"><button class="min" aria-label="Minimizar"></button><button class="max" aria-label="Maximizar"></button><button class="close" aria-label="Cerrar"></button></div></header>
+    <div class="wbody">
+      <div class="lcd">
+        <span class="time" aria-hidden="true">00:00</span>
+        <span class="track"><span>riff_original.wav — sintetizado en tu navegador</span></span>
+        <canvas width="320" height="60" aria-hidden="true"></canvas>
+      </div>
+      <div class="transport">
+        <button class="play" aria-label="Reproducir" aria-pressed="false">▶</button>
+        <button class="stop" aria-label="Parar">■</button>
+      </div>
+      <ol class="playlist">
+        <li>riff_original.wav</li>
+        <li><a href="https://www.youtube.com/results?search_query=AC%2FDC+Back+in+Black" target="_blank" rel="noopener">AC/DC – Back in Black</a></li>
+        <li><a href="https://www.youtube.com/results?search_query=Led+Zeppelin+Whole+Lotta+Love" target="_blank" rel="noopener">Led Zeppelin – Whole Lotta Love</a></li>
+        <li><a href="https://www.youtube.com/results?search_query=Deep+Purple+Highway+Star" target="_blank" rel="noopener">Deep Purple – Highway Star</a></li>
+        <li><a href="https://www.youtube.com/results?search_query=Black+Sabbath+Paranoid" target="_blank" rel="noopener">Black Sabbath – Paranoid</a></li>
+        <li><a href="https://www.youtube.com/results?search_query=Iron+Maiden+The+Trooper" target="_blank" rel="noopener">Iron Maiden – The Trooper</a></li>
+        <li><a href="https://www.youtube.com/results?search_query=Metallica+Master+of+Puppets" target="_blank" rel="noopener">Metallica – Master of Puppets</a></li>
+      </ol>
+      <small>El riff suena aquí mismo: guitarra distorsionada hecha con Web Audio. El resto abre YouTube.</small>
+    </div>
+  </section>
+
+  <!-- ═══ Cubo.exe ═══ -->
+  <section class="win" id="w-cube" data-icon="i-cube" data-short="Cubo.exe" style="--w:26rem" aria-labelledby="t-cube" tabindex="-1">
+    <header class="titlebar"><svg class="ti"><use href="#i-cube"/></svg><h2 id="t-cube">Cubo.exe</h2>
+      <div class="wbtns"><button class="min" aria-label="Minimizar"></button><button class="max" aria-label="Maximizar"></button><button class="close" aria-label="Cerrar"></button></div></header>
+    <div class="wbody cubeapp">
+      <p class="scramble"></p>
+      <output aria-live="polite">0.00</output>
+      <button class="btn toggle">Empezar / parar</button>
+      <button class="btn reshuffle">Nueva mezcla</button>
+      <ol class="times" aria-label="Últimos tiempos"></ol>
+      <p class="avg" data-label="ao5"></p>
+      <p class="statusbar" style="border:0">Con la ventana activa, la barra espaciadora también sirve. Mi media: sub-20. ¿La tuya?</p>
+    </div>
+  </section>
+
+
+  <!-- ═══ Correo ═══ -->
+  <section class="win mail" id="w-mail" data-icon="i-mail" data-short="Nuevo mensaje" style="--w:30rem" aria-labelledby="t-mail" tabindex="-1">
+    <header class="titlebar"><svg class="ti"><use href="#i-mail"/></svg><h2 id="t-mail">Nuevo mensaje para Yannis</h2>
+      <div class="wbtns"><button class="min" aria-label="Minimizar"></button><button class="max" aria-label="Maximizar"></button><button class="close" aria-label="Cerrar"></button></div></header>
+    <form class="wbody" action="mailto:yanniselflorin@gmail.com" method="get" enctype="text/plain">
+      <div class="field"><label for="m-to">Para:</label><input id="m-to" value="yanniselflorin@gmail.com" readonly></div>
+      <div class="field"><label for="m-subject">Asunto:</label><input id="m-subject" name="subject" placeholder="Hola, Yannis"></div>
+      <textarea name="body" aria-label="Mensaje" placeholder="Escribe aquí tu mensaje. Al enviar se abre tu programa de correo."></textarea>
+      <div class="dlg-actions"><button class="btn" type="submit">Enviar</button></div>
+      <p class="links">También estoy en
+        <a href="https://github.com/Yonniss" target="_blank" rel="noopener">GitHub</a>,
+        <a href="https://www.linkedin.com/in/yannis-florin-ionica-b22506258/" target="_blank" rel="noopener">LinkedIn</a> e
+        <a href="https://instagram.com/yannisflorin25" target="_blank" rel="noopener">Instagram</a>.
+        Y si te gusta lo que hago, <a href="https://ko-fi.com/yonniss" target="_blank" rel="noopener">invítame a un café</a>.
+      </p>
+    </form>
+  </section>
+
+  <!-- ═══ Papelera ═══ -->
+  <section class="win bin" id="w-bin" data-icon="i-bin" data-short="Papelera" style="--w:26rem" aria-labelledby="t-bin" tabindex="-1">
+    <header class="titlebar"><svg class="ti"><use href="#i-bin"/></svg><h2 id="t-bin">Papelera de reciclaje</h2>
+      <div class="wbtns"><button class="min" aria-label="Minimizar"></button><button class="max" aria-label="Maximizar"></button><button class="close" aria-label="Cerrar"></button></div></header>
+    <div class="wbody">
+      <div class="row"><svg><use href="#i-html"/></svg><p>plantilla_de_portfolio_generica.html<br><span>Eliminado en octubre de 2026. Motivo: fondo oscuro, «01. Sobre mí» y cero personalidad.</span></p></div>
+    </div>
+    <div class="statusbar">1 objeto</div>
+  </section>
+
+</main>
+
+<!-- ═══ Solo con JS ═══ -->
+<div class="startmenu" id="startmenu" hidden>
+  <div class="sm-head"><span class="avatar" aria-hidden="true">Y</span>Yannis</div>
+  <div class="sm-cols">
+    <ul>
+      <li><button data-open="w-about"><svg><use href="#i-note"/></svg>Sobre mí</button></li>
+      <li><button data-open="w-projects"><svg><use href="#i-folder"/></svg>Proyectos</button></li>
+      <li><button data-open="w-player"><svg><use href="#i-player"/></svg>Reproductor</button></li>
+      <li><button data-open="w-cube"><svg><use href="#i-cube"/></svg>Cubo.exe</button></li>
+    </ul>
+    <ul class="right">
+      <li><a href="../"><svg><use href="#i-web"/></svg>Volver a la web</a></li>
+      <li><button data-open="w-system"><svg><use href="#i-pc"/></svg>Mi PC</button></li>
+      <li><a href="../CV%20provisional.pdf" target="_blank" rel="noopener"><svg><use href="#i-pdf"/></svg>Mi CV</a></li>
+      <li><button data-open="w-mail"><svg><use href="#i-mail"/></svg>Correo</button></li>
+      <li><a href="https://github.com/Yonniss" target="_blank" rel="noopener"><svg><use href="#i-link"/></svg>GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/yannis-florin-ionica-b22506258/" target="_blank" rel="noopener"><svg><use href="#i-link"/></svg>LinkedIn</a></li>
+      <li><a href="en.html" hreflang="en" lang="en"><svg><use href="#i-web"/></svg>English version</a></li>
+    </ul>
+  </div>
+  <div class="sm-foot"><button data-shutdown>Apagar el equipo</button></div>
+</div>
+
+<footer class="taskbar" hidden>
+  <button class="start" aria-expanded="false" aria-controls="startmenu"><span class="emoji" aria-hidden="true">🧑‍💻</span>inicio</button>
+  <div class="tasks" role="toolbar" aria-label="Ventanas abiertas"></div>
+  <div class="tray"><a href="en.html" hreflang="en" lang="en" title="English version">EN</a><span class="clock"></span></div>
+</footer>
+
+<div class="balloon" role="status" hidden>
+  <b>Bienvenido a Yannis OS</b>
+  Haz clic en los iconos del escritorio para abrir cosas. Prueba el Reproductor 🤘
+  <button aria-label="Cerrar aviso">×</button>
+</div>
+
+
+<div class="overlay boot" hidden aria-hidden="true"><div class="logo">Yannis <span>OS</span></div><div class="bar"><i></i></div></div>
+
+<div class="overlay bsod" hidden role="alertdialog" aria-label="Error">
+  <div>
+    <h2>Yannis OS</h2>
+    <p>Se ha producido un error fatal: DEMASIADO_ROCK (0x000000AC).</p>
+    <p>El sistema ha detectado un exceso de riffs y se ha detenido para proteger los altavoces.</p>
+    <p>Pulsa cualquier tecla para continuar _</p>
+  </div>
+</div>
+
+<div class="overlay shutdown" hidden role="dialog" aria-label="Equipo apagado">
+  <p>Ya puede apagar el equipo de forma segura.</p>
+  <button class="btn" data-boot>Volver a encender</button>
+</div>
+
+</body>
+</html>

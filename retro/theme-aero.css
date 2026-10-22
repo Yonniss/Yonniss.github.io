@@ -1,0 +1,280 @@
+/* Tema Frutiger Aero (2005–2010): cristal, agua, burbujas, orbes y brillo en dos capas. */
+
+[data-theme="aero"] {
+  --ui: 'Segoe UI', 'Hind', Tahoma, sans-serif;
+  --select: #3399ff;
+  --gloss: linear-gradient(180deg, rgba(255, 255, 255, .6) 0%, rgba(255, 255, 255, .2) 49%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, .12) 100%);
+}
+[data-theme="aero"] body { background: #3f9ce0; }
+
+/* ─── Fondo ─── */
+.wp-aero .bubble { transform-box: fill-box; transform-origin: center; animation: bob 7s ease-in-out infinite alternate; }
+.wp-aero .bubble:nth-of-type(2n) { animation-duration: 9s; animation-delay: -3s; }
+.wp-aero .bubble:nth-of-type(3n) { animation-duration: 11s; animation-delay: -6s; }
+@keyframes bob { to { transform: translateY(-22px) scale(1.04); } }
+
+/* ─── Iconos del escritorio ─── */
+[data-theme="aero"] .icon { border-radius: 3px; text-shadow: 0 1px 2px rgba(0, 0, 0, .9), 0 0 6px rgba(0, 30, 60, .7); }
+[data-theme="aero"] .icon svg { filter: drop-shadow(0 3px 3px rgba(0, 30, 60, .55)) saturate(1.15); }
+[data-theme="aero"] .icon:hover { background: linear-gradient(rgba(255, 255, 255, .28), rgba(255, 255, 255, .12)); border-color: rgba(255, 255, 255, .55); }
+[data-theme="aero"] .icon:hover span,
+[data-theme="aero"] .icon:focus-visible span { background: none; }
+[data-theme="aero"] .icon:focus-visible { background: rgba(51, 153, 255, .35); border-color: rgba(255, 255, 255, .7); outline: none; }
+[data-theme="aero"] .files .icon { text-shadow: none; }
+[data-theme="aero"] .files .icon:hover { background: linear-gradient(#f2f9fe, #d6eefb); border-color: #7da2ce; }
+[data-theme="aero"] .files .icon:focus-visible span { color: #000; }
+
+/* Iconos raster (Oxygen) en lugar de los símbolos SVG; cubo, ajedrez e inicio se quedan en SVG */
+[data-theme="aero"] svg:has(> use[href^="#i-"]:not([href="#i-cube"])) { background: var(--ico) center / contain no-repeat; }
+[data-theme="aero"] svg:has(> use[href^="#i-"]:not([href="#i-cube"])) > use { display: none; }
+[data-theme="aero"] svg:has(> use[href="#i-note"]) { --ico: url(img/aero/icons/note.png); }
+[data-theme="aero"] svg:has(> use[href="#i-folder"]) { --ico: url(img/aero/icons/folder.png); }
+[data-theme="aero"] svg:has(> use[href="#i-pc"]) { --ico: url(img/aero/icons/pc.png); }
+[data-theme="aero"] svg:has(> use[href="#i-pdf"]) { --ico: url(img/aero/icons/pdf.png); }
+[data-theme="aero"] svg:has(> use[href="#i-player"]) { --ico: url(img/aero/icons/player.png); }
+[data-theme="aero"] svg:has(> use[href="#i-mail"]) { --ico: url(img/aero/icons/mail.png); }
+[data-theme="aero"] svg:has(> use[href="#i-bin"]) { --ico: url(img/aero/icons/bin.png); }
+[data-theme="aero"] svg:has(> use[href="#i-html"]) { --ico: url(img/aero/icons/html.png); }
+[data-theme="aero"] svg:has(> use[href="#i-web"]) { --ico: url(img/aero/icons/web.png); }
+[data-theme="aero"] svg:has(> use[href="#i-bolt"]) { --ico: url(img/aero/icons/bolt.png); }
+[data-theme="aero"] svg:has(> use[href="#i-chip"]) { --ico: url(img/aero/icons/chip.png); }
+[data-theme="aero"] svg:has(> use[href="#i-term"]) { --ico: url(img/aero/icons/term.png); }
+[data-theme="aero"] svg:has(> use[href="#i-moon"]) { --ico: url(img/aero/icons/moon.png); }
+[data-theme="aero"] svg:has(> use[href="#i-printer"]) { --ico: url(img/aero/icons/printer.png); }
+[data-theme="aero"] svg:has(> use[href="#i-link"]) { --ico: url(img/aero/icons/link.png); }
+
+[data-theme="aero"] .nameplate h1 { font-weight: 300; font-size: 30px; letter-spacing: 0; }
+[data-theme="aero"] .nameplate { text-shadow: 0 1px 3px rgba(0, 20, 50, .8), 0 0 12px rgba(0, 60, 120, .5); }
+
+/* ─── Ventanas de cristal ─── */
+[data-theme="aero"] .win {
+  padding: 0 7px 7px;
+  background: url(img/aero/glass.png) 0 0 / 512px, linear-gradient(rgba(255, 255, 255, .25), rgba(255, 255, 255, 0) 120px), rgba(120, 180, 225, .42);
+  -webkit-backdrop-filter: blur(10px) saturate(1.7) brightness(1.05);
+  backdrop-filter: blur(10px) saturate(1.7) brightness(1.05);
+  border: 1px solid rgba(0, 10, 25, .75);
+  border-radius: 7px;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .55), inset 0 1px 0 1px rgba(255, 255, 255, .35), 0 0 0 1px rgba(255, 255, 255, .08), 0 14px 40px rgba(0, 20, 50, .55), 0 3px 10px rgba(0, 20, 50, .35);
+}
+[data-theme="aero"] .win.idle {
+  background: url(img/aero/glass.png) 0 0 / 512px, rgba(200, 220, 235, .32);
+  border-color: rgba(0, 10, 25, .5);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .4), 0 6px 20px rgba(0, 20, 50, .35);
+}
+[data-theme="aero"] .titlebar,
+[data-theme="aero"] .win.idle .titlebar {
+  height: 32px; margin: 0 -7px; padding: 0 6px 0 10px;
+  background: var(--gloss);
+  border-radius: 7px 7px 0 0;
+  color: #0c2238;
+}
+[data-theme="aero"] .titlebar h2 {
+  font-weight: 400; font-size: 14px;
+  text-shadow: 0 0 10px #fff, 0 0 6px #fff, 0 0 2px #fff;
+}
+[data-theme="aero"] .win.idle .titlebar h2 { color: #3d5266; }
+
+[data-theme="aero"] .wbtns { gap: 0; align-self: flex-start; }
+[data-theme="aero"] .wbtns button {
+  width: 27px; height: 19px;
+  border: 1px solid rgba(10, 25, 45, .75); border-top: 0; border-left-width: 0;
+  border-radius: 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, .55) 0%, rgba(255, 255, 255, .22) 50%, rgba(200, 225, 240, .1) 51%, rgba(255, 255, 255, .35) 100%);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .45);
+}
+[data-theme="aero"] .wbtns button:first-child { border-left-width: 1px; border-bottom-left-radius: 5px; }
+[data-theme="aero"] .wbtns .close {
+  width: 46px; border-bottom-right-radius: 5px;
+  background: linear-gradient(180deg, #eaa391 0%, #d9694d 49%, #c4300f 50%, #df7a5b 100%);
+}
+[data-theme="aero"] .wbtns button:hover { filter: none; background: linear-gradient(180deg, #c9ecff 0%, #8ccdf5 49%, #3d9bdc 50%, #7fd2ff 100%); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .6), 0 0 9px rgba(120, 210, 255, .95); }
+[data-theme="aero"] .wbtns .close:hover { background: linear-gradient(180deg, #f6b8a8 0%, #e8785b 49%, #d63c14 50%, #f0906e 100%); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .6), 0 0 10px rgba(255, 110, 70, .9); }
+[data-theme="aero"] .wbtns .min::before { left: 9px; right: 9px; bottom: 5px; height: 3px; background: #1d2e3d; box-shadow: 0 1px #fff; }
+[data-theme="aero"] .wbtns .max::before { inset: 4px 8px; border-color: #1d2e3d; border-top-width: 2px; }
+[data-theme="aero"] .wbtns .close::before,
+[data-theme="aero"] .wbtns .close::after { left: 17px; right: 17px; top: 8px; box-shadow: 0 0 2px rgba(80, 0, 0, .8); }
+
+/* Interior opaco, como en Vista */
+[data-theme="aero"] .menubar,
+[data-theme="aero"] .address,
+[data-theme="aero"] .tabs { background: linear-gradient(#fafcfe, #e9f0f7); border-color: #a9bdd1; }
+[data-theme="aero"] .wbody { background: #f4f8fb; }
+[data-theme="aero"] .statusbar { background: linear-gradient(#f1f5f9, #dfe8f1); border-color: #a9bdd1; }
+[data-theme="aero"] .win > .menubar,
+[data-theme="aero"] .win > .address,
+[data-theme="aero"] .win > .tabs,
+[data-theme="aero"] .win > .wbody:first-of-type { border-top: 1px solid rgba(10, 25, 45, .5); }
+[data-theme="aero"] .win.maxed,
+[data-theme="aero"] .win.maxed .titlebar { border-radius: 0; }
+
+[data-theme="aero"] .tabs button { background: linear-gradient(#fdfdfd, #e3e8ee); border-color: #8ea4bb; }
+[data-theme="aero"] .tabs button[aria-selected="true"] { background: #fff; border-top: 1px solid #8ea4bb; border-color: #8ea4bb; }
+[data-theme="aero"] .tabpanel { background: #fff; border-color: #8ea4bb; }
+
+[data-theme="aero"] .taskpane { background: linear-gradient(#f5f9fd, #d9e8f5); border-right: 1px solid #b5cbe0; }
+[data-theme="aero"] .taskpane section { background: none; }
+[data-theme="aero"] .taskpane h3 { background: none; color: #1e395b; border-bottom: 1px solid #b5cbe0; border-radius: 0; padding-left: 0; }
+[data-theme="aero"] .taskpane ul { padding-left: 0; }
+
+[data-theme="aero"] .btn {
+  background: linear-gradient(180deg, #f2f2f2 0%, #ebebeb 49%, #dddddd 50%, #cfcfcf 100%);
+  border: 1px solid #707070;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .8);
+}
+[data-theme="aero"] .btn:hover {
+  background: linear-gradient(180deg, #eaf6fd 0%, #d9f0fc 49%, #bee6fd 50%, #a7d9f5 100%);
+  border-color: #3c7fb1;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .8);
+}
+
+/* Reproductor: negro brillante, tipo reproductor multimedia de 2007 */
+[data-theme="aero"] .player .wbody { background: linear-gradient(#3b414b 0%, #15181d 18%, #050607 100%); }
+[data-theme="aero"] .lcd {
+  --bar: #4fd3ff; --bar-hot: #d6f7ff;
+  background: radial-gradient(ellipse at 50% 0%, #0d3a52, #000 70%);
+  border: 1px solid #000; border-radius: 6px;
+  box-shadow: inset 0 0 0 1px rgba(120, 210, 255, .25), 0 1px rgba(255, 255, 255, .15);
+  color: #8fe7ff;
+}
+[data-theme="aero"] .transport { align-items: center; gap: 8px; }
+[data-theme="aero"] .transport button {
+  width: 34px; height: 34px; border-radius: 50%;
+  background: radial-gradient(circle at 50% 30%, #6d7682, #1d2127 70%);
+  border: 1px solid #000;
+  box-shadow: inset 0 1px rgba(255, 255, 255, .35);
+  color: #dff6ff;
+}
+[data-theme="aero"] .transport .play {
+  width: 44px; height: 44px; font-size: 16px;
+  background: radial-gradient(circle at 50% 30%, #8fe3ff, #1a7ad1 55%, #0b3566);
+  box-shadow: inset 0 1px rgba(255, 255, 255, .6), 0 0 10px rgba(80, 200, 255, .6);
+}
+[data-theme="aero"] .transport button[aria-pressed="true"] { color: #fff; }
+[data-theme="aero"] .playlist { background: rgba(0, 0, 0, .55); border: 1px solid #000; border-radius: 4px; }
+[data-theme="aero"] .playlist a, [data-theme="aero"] .playlist li::marker { color: #8fe7ff; }
+
+/* ─── Barra de tareas de cristal y orbe de inicio ─── */
+[data-theme="aero"] .taskbar {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, .2) 0%, rgba(255, 255, 255, .06) 50%, rgba(0, 0, 0, .14) 51%, rgba(0, 0, 0, .3) 100%),
+    url(img/aero/glass.png) 0 0 / 512px,
+    rgba(25, 55, 90, .5);
+  -webkit-backdrop-filter: blur(12px) saturate(1.6);
+  backdrop-filter: blur(12px) saturate(1.6);
+  border-top: 1px solid rgba(0, 0, 0, .7);
+  box-shadow: inset 0 1px rgba(255, 255, 255, .45);
+  align-items: center;
+}
+[data-theme="aero"] .start {
+  width: 48px; height: 48px; margin: -8px 6px 0 6px; padding: 0;
+  justify-content: center; gap: 0;
+  border: 0; border-radius: 50%;
+  background: url(img/aero/orb.png) center / contain no-repeat;
+  box-shadow: none;
+  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, .5));
+  font-size: 0;
+  transition: filter .2s;
+}
+[data-theme="aero"] .start .emoji { font-size: 24px; line-height: 1; filter: drop-shadow(0 1px 2px rgba(0, 0, 0, .6)); }
+[data-theme="aero"] .start:hover { filter: brightness(1.18) drop-shadow(0 0 8px rgba(110, 220, 255, .95)); }
+[data-theme="aero"] .start[aria-expanded="true"] { filter: brightness(1.25) drop-shadow(0 0 10px rgba(110, 220, 255, 1)); }
+
+[data-theme="aero"] .tasks { align-self: stretch; padding: 4px 6px; }
+[data-theme="aero"] .tasks button {
+  background: var(--gloss), rgba(255, 255, 255, .05);
+  border: 1px solid rgba(0, 0, 0, .55); border-radius: 3px;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .2);
+  text-shadow: 0 0 8px #000, 0 1px 2px #000;
+}
+[data-theme="aero"] .tasks button:hover { background: var(--gloss), radial-gradient(ellipse at 50% 120%, rgba(150, 220, 255, .75), rgba(150, 220, 255, 0) 70%), rgba(255, 255, 255, .08); }
+[data-theme="aero"] .tasks button.active {
+  background: var(--gloss), radial-gradient(ellipse at 50% 120%, rgba(120, 210, 255, .8), rgba(120, 210, 255, 0) 75%), rgba(110, 190, 255, .25);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .4), inset 0 0 10px rgba(140, 220, 255, .5);
+}
+[data-theme="aero"] .tray { align-self: stretch; background: none; border-left: 1px solid rgba(255, 255, 255, .18); text-shadow: 0 1px 2px #000; }
+
+/* Menú Inicio de cristal */
+[data-theme="aero"] .startmenu {
+  left: 4px; bottom: calc(var(--taskbar-h) + 4px);
+  padding: 8px;
+  background: linear-gradient(rgba(40, 70, 100, .6), rgba(10, 25, 40, .8));
+  -webkit-backdrop-filter: blur(16px) saturate(1.5);
+  backdrop-filter: blur(16px) saturate(1.5);
+  border: 1px solid rgba(0, 0, 0, .8); border-radius: 8px;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .35), 0 10px 30px rgba(0, 0, 0, .5);
+}
+[data-theme="aero"] .sm-head { background: none; padding: 2px 4px 10px; text-shadow: 0 1px 3px #000; }
+[data-theme="aero"] .avatar { border-radius: 6px; border-color: rgba(255, 255, 255, .8); background: radial-gradient(circle at 50% 30%, #43d18f, #0b6b48); box-shadow: 0 2px 6px rgba(0, 0, 0, .5); }
+[data-theme="aero"] .sm-cols ul:first-child { background: #fff; border: 1px solid rgba(0, 0, 0, .6); border-radius: 4px; }
+[data-theme="aero"] .sm-cols .right { background: none; border: 0; }
+[data-theme="aero"] .sm-cols .right a,
+[data-theme="aero"] .sm-cols .right button { color: #fff; text-shadow: 0 1px 2px #000; }
+[data-theme="aero"] .sm-cols button:hover, [data-theme="aero"] .sm-cols a:hover,
+[data-theme="aero"] .sm-cols button:focus-visible, [data-theme="aero"] .sm-cols a:focus-visible {
+  background: linear-gradient(rgba(255, 255, 255, .3), rgba(120, 200, 255, .25));
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .5);
+  border-radius: 3px;
+  color: inherit;
+}
+[data-theme="aero"] .sm-cols ul:first-child button:hover,
+[data-theme="aero"] .sm-cols ul:first-child button:focus-visible { background: linear-gradient(#f2f9fe, #d6eefb); box-shadow: inset 0 0 0 1px #7da2ce; }
+[data-theme="aero"] .sm-foot { background: none; padding: 8px 4px 0; }
+[data-theme="aero"] .sm-foot button { padding: 3px 8px; border: 1px solid rgba(0, 0, 0, .7); border-radius: 3px; background: linear-gradient(180deg, #e9a08d, #c4300f 50%, #db6f50); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .4); text-shadow: 0 1px 1px #500; }
+[data-theme="aero"] .sm-foot button::before { display: none; }
+
+
+[data-theme="aero"] .balloon {
+  border: 1px solid #6aa5d6; border-radius: 6px;
+  background: linear-gradient(#fff, #e4f1fb);
+  box-shadow: 0 4px 14px rgba(0, 30, 70, .4);
+}
+
+/* ─── Gadgets de la barra lateral ─── */
+@media (min-width: 1100px) {
+  [data-theme="aero"] .gadgets {
+    position: absolute; right: 16px; top: 16px;
+    display: flex; flex-direction: column; gap: 14px;
+    width: 150px;
+  }
+}
+[data-theme="aero"] .gadget {
+  position: relative;
+  padding: 10px;
+  border-radius: 8px;
+  background:
+    linear-gradient(rgba(255, 255, 255, .3), rgba(255, 255, 255, .08) 40%, rgba(0, 0, 0, .1) 41%, rgba(0, 0, 0, .3)),
+    url(img/aero/glass.png) 0 0 / 512px,
+    rgba(20, 60, 100, .4);
+  border: 1px solid rgba(255, 255, 255, .55);
+  box-shadow: 0 0 0 1px rgba(0, 15, 35, .5), 0 6px 18px rgba(0, 20, 50, .45), inset 0 1px rgba(255, 255, 255, .7);
+  -webkit-backdrop-filter: blur(8px) saturate(1.5);
+  backdrop-filter: blur(8px) saturate(1.5);
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0, 20, 40, .9);
+  font-size: 12px;
+}
+[data-theme="aero"] .g-clock { padding: 6px; background: none; border: 0; box-shadow: none; -webkit-backdrop-filter: none; backdrop-filter: none; }
+[data-theme="aero"] .g-clock svg { display: block; width: 100%; filter: drop-shadow(0 4px 8px rgba(0, 30, 70, .55)); }
+[data-theme="aero"] .g-title { margin: 0 0 4px; font-weight: 600; }
+[data-theme="aero"] .g-track { margin: 0 0 8px; min-height: 2.6em; }
+[data-theme="aero"] .g-np .btn { min-width: 0; width: 100%; font-size: 12px; text-shadow: none; }
+[data-theme="aero"] .g-meter svg { display: block; width: 100%; }
+[data-theme="aero"] .needle { transform-origin: 60px 62px; transition: transform .25s ease-out; }
+[data-theme="aero"] .n-caf { transform: rotate(calc((var(--caf, .82) - .5) * 180deg)); }
+[data-theme="aero"] .n-rock { transform: rotate(calc((var(--rock, .35) - .5) * 180deg)); }
+[data-theme="aero"] .g-legend { display: flex; justify-content: space-between; margin: 4px 0 0; }
+[data-theme="aero"] .g-legend .caf::before,
+[data-theme="aero"] .g-legend .rock::before { content: ''; display: inline-block; width: 8px; height: 8px; margin-right: 4px; border-radius: 50%; }
+[data-theme="aero"] .g-legend .caf::before { background: #8fe7ff; }
+[data-theme="aero"] .g-legend .rock::before { background: #ff7a45; }
+
+@media (max-width: 699px) {
+  [data-theme="aero"] .win { padding: 0 4px 4px; border-radius: 0; }
+  [data-theme="aero"] .titlebar, [data-theme="aero"] .win.idle .titlebar { margin: 0 -4px; border-radius: 0; height: 36px; }
+  [data-theme="aero"] .start { width: 44px; height: 44px; margin-top: -6px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wp-aero .bubble { animation: none; }
+  [data-theme="aero"] .needle { transition: none; }
+}

@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="aero">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yannis Florin Ionica | Software and electronics portfolio</title>
+<meta name="description" content="Portfolio of Yannis Florin Ionica: Computer Engineering student at URV and software and electronics developer. Websites, ESP32, IoT and more, inside a 2000s desktop.">
+<meta name="author" content="Yannis Florin Ionica">
+<link rel="canonical" href="https://yonniss.github.io/">
+<meta name="robots" content="noindex">
+
+<!-- Favicon -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='27' font-size='27'>🧑‍💻</text></svg>">
+
+<!-- Open Graph -->
+<meta property="og:type"        content="website">
+<meta property="og:url"         content="https://yonniss.github.io/en.html">
+<meta property="og:title"       content="Yannis Florin Ionica | Software and electronics portfolio">
+<meta property="og:description" content="Portfolio of Yannis Florin Ionica: Computer Engineering student at URV and software and electronics developer. Websites, ESP32, IoT and more, inside a 2000s desktop.">
+<meta property="og:image"       content="https://yonniss.github.io/og-image.svg">
+<meta property="og:locale"      content="en_US">
+
+<!-- Twitter Card -->
+<meta name="twitter:card"        content="summary">
+<meta name="twitter:title"       content="Yannis Florin Ionica | Software and electronics portfolio">
+<meta name="twitter:description" content="Portfolio of Yannis Florin Ionica: Computer Engineering student at URV and software and electronics developer. Websites, ESP32, IoT and more, inside a 2000s desktop.">
+<meta name="twitter:image"       content="https://yonniss.github.io/og-image.svg">
+
+<!-- JSON-LD: Person (same @id as the Spanish version — Google entiende que son la misma entidad) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://yonniss.github.io/#yannis",
+  "name": "Yannis Florin Ionica",
+  "givenName": "Yannis",
+  "additionalName": "Florin",
+  "familyName": "Ionica",
+  "alternateName": ["Yannis Ionica", "Yannis Florin"],
+  "jobTitle": "Founder & Software Engineer",
+  "description": "Freelance developer from L'Ampolla, Tarragona. Websites for businesses, custom web applications, hardware, electronics and IoT. Founder of IonicTech.",
+  "url": "https://yonniss.github.io/en.html",
+  "image": "https://yonniss.github.io/og-image.svg",
+  "nationality": {
+    "@type": "Country",
+    "name": "Spain"
+  },
+  "homeLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "L'Ampolla",
+      "addressRegion": "Catalonia",
+      "addressCountry": "ES"
+    }
+  },
+  "knowsAbout": [
+    "Web Development",
+    "JavaScript",
+    "Python",
+    "HTML",
+    "CSS",
+    "Hardware",
+    "Electronics",
+    "IoT",
+    "Arduino",
+    "ESP32",
+    "Linux",
+    "Raspberry Pi",
+    "KiCad",
+    "PCB Design"
+  ],
+  "worksFor": {
+    "@type": "Organization",
+    "@id": "https://ionictech.dev/#org",
+    "name": "IonicTech",
+    "url": "https://ionictech.dev",
+    "founder": {
+      "@id": "https://yonniss.github.io/#yannis"
+    }
+  },
+  "sameAs": [
+    "https://ionictech.dev",
+    "https://www.linkedin.com/in/yannis-florin-ionica-b22506258/",
+    "https://github.com/Yonniss",
+    "https://www.instagram.com/yannisflorin25/"
+  ]
+}
+</script>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="theme-aero.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;600&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('os')</script>
+<script src="main.js" defer></script>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="ga-meter" x1="0" x2="1"><stop offset="0" stop-color="#3cf05a"/><stop offset=".55" stop-color="#ffd23f"/><stop offset="1" stop-color="#ff4b2b"/></linearGradient>
+    <linearGradient id="gi-folder-b" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3c04f"/><stop offset="1" stop-color="#c9860f"/></linearGradient>
+    <linearGradient id="gi-folder-f" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe9a0"/><stop offset=".5" stop-color="#fdd25c"/><stop offset="1" stop-color="#eaa92a"/></linearGradient>
+    <linearGradient id="gi-paper" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#dce6f2"/></linearGradient>
+  </defs>
+  <symbol id="i-note" viewBox="0 0 32 32"><path d="M7 4h18v25H7z" fill="url(#gi-paper)" stroke="#5e7a9e"/><path d="M10 10h12M10 14h12M10 18h12M10 22h8" stroke="#3a6ad4"/><path d="M9 2v4M13 2v4M17 2v4M21 2v4" stroke="#444" stroke-width="1.5"/></symbol>
+  <symbol id="i-folder" viewBox="0 0 32 32"><path d="M3 7h9l2 2h15v17H3z" fill="url(#gi-folder-b)" stroke="#a86d0c" stroke-width=".8"/><path d="M3 12h26v14H3z" fill="url(#gi-folder-f)" stroke="#c98a1a" stroke-width=".8"/><path d="M3 12h26v2H3z" fill="#fff" opacity=".45"/></symbol>
+  <symbol id="i-pc" viewBox="0 0 32 32"><rect x="4" y="4" width="24" height="18" rx="2" fill="#cdd6e3" stroke="#59677a"/><rect x="7" y="7" width="18" height="12" fill="#3a8cf5"/><path d="M7 15q5-5 9-1t9-2v7H7z" fill="#5daf2c"/><path d="M12 22h8l2 6H10z" fill="#9aa7b8" stroke="#59677a"/></symbol>
+  <symbol id="i-pdf" viewBox="0 0 32 32"><path d="M7 3h13l5 5v21H7z" fill="#fff" stroke="#888"/><path d="M20 3v5h5" fill="#ddd" stroke="#888"/><rect x="5" y="16" width="17" height="9" fill="#c8102e"/><text x="13.5" y="23" font-size="7" font-weight="700" fill="#fff" text-anchor="middle" font-family="Tahoma,sans-serif">CV</text></symbol>
+  <symbol id="i-player" viewBox="0 0 32 32"><rect x="3" y="7" width="26" height="18" rx="2" fill="#2b2f36" stroke="#111"/><rect x="6" y="10" width="14" height="7" fill="#000"/><path d="M7 16l2-4 2 3 2-5 2 4 2-2 2 3" stroke="#3cf05a" fill="none"/><circle cx="24.5" cy="13.5" r="3" fill="#9aa"/><rect x="6" y="20" width="20" height="2" fill="#666"/></symbol>
+  <symbol id="i-cube" viewBox="0 0 32 32"><path d="M16 3l12 6.5L16 16 4 9.5z" fill="#fff" stroke="#111"/><path d="M4 9.5L16 16v13L4 22.5z" fill="#e8312f" stroke="#111"/><path d="M28 9.5L16 16v13l12-6.5z" fill="#1f6fe0" stroke="#111"/><path d="M8 7.3l12 6.5M12 5.2l12 6.5M8 11.7v13M12 13.8v13M20 13.8v13M24 11.7v13M4 14l12 6.5M4 18.3l12 6.5M28 14l-12 6.5M28 18.3l-12 6.5" stroke="#111" stroke-width=".7" fill="none"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 32 32"><rect x="3" y="8" width="26" height="17" fill="#fff" stroke="#5e7a9e"/><path d="M3 8l13 10L29 8" fill="none" stroke="#5e7a9e"/><rect x="22" y="10" width="5" height="5" fill="#e8312f"/></symbol>
+  <symbol id="i-bin" viewBox="0 0 32 32"><path d="M8 9h16l-1.6 19H9.6z" fill="#dfeaf5" stroke="#5b7a96"/><rect x="7" y="6" width="18" height="3" rx="1" fill="#b8cde0" stroke="#5b7a96"/><path d="M13 12v13M16 12v13M19 12v13" stroke="#8aa5bf"/><path d="M11 15l4 4M18 14l-3 6" stroke="#c8102e" stroke-width="1.2"/></symbol>
+  <symbol id="i-html" viewBox="0 0 32 32"><path d="M7 3h13l5 5v21H7z" fill="#fff" stroke="#888"/><path d="M20 3v5h5" fill="#ddd" stroke="#888"/><path d="M13 15l-3 3 3 3M19 15l3 3-3 3M17 14l-2 8" stroke="#e8701a" fill="none" stroke-width="1.4"/></symbol>
+  <symbol id="i-web" viewBox="0 0 32 32"><circle cx="16" cy="16" r="12" fill="#4b97f0" stroke="#1d4f9c"/><path d="M6 12q4 2 6 0t5 2 3 6-2 6M18 5q-1 4 2 5t6 3" fill="#5daf2c" stroke="none"/><path d="M4 16h24M16 4c-6 6-6 18 0 24M16 4c6 6 6 18 0 24" stroke="#e8f2ff" fill="none" stroke-width=".8"/></symbol>
+  <symbol id="i-bolt" viewBox="0 0 32 32"><rect x="4" y="4" width="24" height="24" rx="5" fill="#0d4fc4"/><path d="M18 6l-8 12h6l-2 8 8-12h-6z" fill="#ffd23f"/></symbol>
+  <symbol id="i-chip" viewBox="0 0 32 32"><rect x="9" y="9" width="14" height="14" rx="1" fill="#222"/><path d="M12 9V4M16 9V4M20 9V4M12 28v-5M16 28v-5M20 28v-5M9 12H4M9 16H4M9 20H4M28 12h-5M28 16h-5M28 20h-5" stroke="#b9b9b9" stroke-width="2"/><circle cx="12" cy="12" r="1.2" fill="#888"/></symbol>
+  <symbol id="i-term" viewBox="0 0 32 32"><rect x="3" y="6" width="26" height="20" rx="2" fill="#1b1b1b" stroke="#555"/><rect x="3" y="6" width="26" height="3" fill="#555"/><path d="M7 13l4 3-4 3M13 20h6" stroke="#ddd" fill="none" stroke-width="1.5"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 32 32"><rect x="3" y="3" width="26" height="26" rx="3" fill="#2a1f4d"/><path d="M19 7a10 10 0 1 0 6 14A8 8 0 0 1 19 7z" fill="#f7e9a0"/><circle cx="9" cy="9" r="1" fill="#fff"/><circle cx="24" cy="10" r=".8" fill="#fff"/></symbol>
+  <symbol id="i-printer" viewBox="0 0 32 32"><path d="M5 5h22v4H5z" fill="#9aa7b8" stroke="#59677a"/><path d="M5 9h3v18H5zM24 9h3v18h-3z" fill="#cdd6e3" stroke="#59677a"/><path d="M8 25h16v2H8z" fill="#59677a"/><path d="M12 25v-6l4-3 4 3v6z" fill="#ffb347" stroke="#a15c00"/><path d="M15 9h2v4h-2z" fill="#333"/></symbol>
+  <symbol id="i-link" viewBox="0 0 32 32"><rect x="4" y="4" width="24" height="24" rx="3" fill="#fff" stroke="#5e7a9e"/><path d="M13 19l6-6M11 16l-2 2a3 3 0 0 0 5 5l2-2M21 16l2-2a3 3 0 0 0-5-5l-2 2" stroke="#215dc6" stroke-width="2" fill="none"/></symbol>
+</svg>
+
+<main class="desktop" id="desktop">
+  <svg class="wallpaper" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <!-- El Delta de l'Ebre, más o menos -->
+    <g class="wp-aero">
+      <image href="img/aero/wallpaper.jpg" width="1600" height="1000" preserveAspectRatio="xMidYMid slice"/>
+      <image class="bubble" href="img/aero/bubble.png" x="230" y="430" width="110" height="110"/>
+      <image class="bubble" href="img/aero/bubble.png" x="380" y="520" width="50" height="50"/>
+      <image class="bubble" href="img/aero/bubble.png" x="700" y="380" width="70" height="70"/>
+      <image class="bubble" href="img/aero/bubble.png" x="1020" y="540" width="140" height="140"/>
+      <image class="bubble" href="img/aero/bubble.png" x="1240" y="420" width="60" height="60"/>
+      <image class="bubble" href="img/aero/bubble.png" x="560" y="760" width="90" height="90"/>
+      <image class="bubble" href="img/aero/bubble.png" x="880" y="820" width="44" height="44"/>
+      <image class="bubble" href="img/aero/bubble.png" x="1460" y="560" width="96" height="96"/>
+      <image class="bubble" href="img/aero/bubble.png" x="120" y="820" width="64" height="64"/>
+    </g>
+  </svg>
+
+  <nav class="icons" aria-label="Desktop">
+    <a class="icon" href="../en.html"><svg><use href="#i-web"/></svg><span>Back to the website</span></a>
+    <button class="icon" data-open="w-about"><svg><use href="#i-note"/></svg><span>about_me.txt</span></button>
+    <button class="icon" data-open="w-projects"><svg><use href="#i-folder"/></svg><span>Projects</span></button>
+    <button class="icon" data-open="w-system"><svg><use href="#i-pc"/></svg><span>My Computer</span></button>
+    <a class="icon" href="../CV%20provisional.pdf" target="_blank" rel="noopener"><svg><use href="#i-pdf"/></svg><span>CV.pdf</span></a>
+    <button class="icon" data-open="w-player"><svg><use href="#i-player"/></svg><span>Player</span></button>
+    <button class="icon" data-open="w-cube"><svg><use href="#i-cube"/></svg><span>Cube.exe</span></button>
+    <button class="icon" data-open="w-mail"><svg><use href="#i-mail"/></svg><span>Mail</span></button>
+    <button class="icon" data-open="w-bin"><svg><use href="#i-bin"/></svg><span>Recycle Bin</span></button>
+  </nav>
+
+  <div class="nameplate">
+    <h1>Yannis Florin Ionica</h1>
+    <p>Software and electronics. Portfolio, 2026 edition</p>
+  </div>
+
+  <aside class="gadgets" aria-label="Gadgets">
+    <div class="gadget g-clock"><svg viewBox="0 0 100 100" aria-hidden="true">
+      <image href="img/aero/clock-face.png" width="100" height="100"/>
+      <line class="h" x1="50" y1="50" x2="50" y2="29" stroke="#1d2e3d" stroke-width="4" stroke-linecap="round"/>
+      <line class="m" x1="50" y1="50" x2="50" y2="17" stroke="#1d2e3d" stroke-width="3" stroke-linecap="round"/>
+      <line class="s" x1="50" y1="56" x2="50" y2="13" stroke="#e04b00" stroke-width="1.5" stroke-linecap="round"/>
+      <circle cx="50" cy="50" r="3.5" fill="#1d2e3d"/>
+      <image href="img/aero/clock-glass.png" width="100" height="100"/>
+    </svg></div>
+    <div class="gadget g-np">
+      <p class="g-title">Now playing</p>
+      <p class="g-track" data-idle="Silence. Open the Player and hit ▶." data-paused="Paused.">Silence. Open the Player and hit ▶.</p>
+      <button class="btn" data-open="w-player">Player</button>
+    </div>
+    <div class="gadget g-meter">
+      <p class="g-title">Levels</p>
+      <svg viewBox="0 0 120 70" aria-hidden="true">
+        <path d="M10 62A50 50 0 0 1 110 62" stroke="rgba(0,0,0,.35)" stroke-width="10" fill="none"/>
+        <path d="M10 62A50 50 0 0 1 110 62" stroke="url(#ga-meter)" stroke-width="7" fill="none"/>
+        <line class="needle n-caf" x1="60" y1="62" x2="60" y2="20" stroke="#8fe7ff" stroke-width="3" stroke-linecap="round"/>
+        <line class="needle n-rock" x1="60" y1="62" x2="60" y2="16" stroke="#ff7a45" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="60" cy="62" r="5" fill="#e9f3fb" stroke="#2b3f54"/>
+      </svg>
+      <p class="g-legend"><span class="caf">Caffeine</span><span class="rock">Rock</span></p>
+    </div>
+  </aside>
+
+  <!-- ═══ about_me.txt ═══ -->
+  <section class="win" id="w-about" data-icon="i-note" data-short="about_me.txt" data-pos="130,24" style="--w:36rem" aria-labelledby="t-about" tabindex="-1">
+    <header class="titlebar"><svg class="ti"><use href="#i-note"/></svg><h2 id="t-about">about_me.txt - Notepad</h2>
+      <div class="wbtns"><button class="min" aria-label="Minimize"></button><button class="max" aria-label="Maximize"></button><button class="close" aria-label="Close"></button></div></header>
+    <div class="menubar" aria-hidden="true"><span>File</span><span>Edit</span><span>Format</span><span>View</span><span>Help</span></div>
+    <div class="wbody">
+      <div class="notepad">
+        <p>Hi, I'm Yannis.</p>
+        <p>I study Computer Engineering at Universitat Rovira i Virgili and live in L'Ampolla, a small town in the Ebro Delta, Spain (yes, the one in the wallpaper).</p>
+        <p>I move between software and hardware: I build websites and apps, design PCBs in KiCad, program ESP32s and 3D print the enclosures. I freelance building websites for businesses, and I'm working on <a href="https://ionictech.dev" target="_blank" rel="noopener">IonicTech</a>, my project to bring small businesses online.</p>
+        <p>Away from the screen: Rubik's cube (sub-20 average on 3×3), chess (900 ELO and climbing) and loud rock, from classic to metal.</p>
+        <p>I speak Spanish, Catalan, Romanian and English, and I'm learning Japanese.</p>
+        <p>Open the Projects folder to see what I've built, or Mail if you'd like to talk.</p>
+      </div>
+    </div>
+    <div class="statusbar">Ln 1, Col 1</div>
+  </section>
+
+  <!-- ═══ Projects ═══ -->
+  <section class="win" id="w-projects" data-icon="i-folder" data-short="Projects" data-pos="560,130" style="--w:40rem" aria-labelledby="t-projects" tabindex="-1">
+    <header class="titlebar"><svg class="ti"><use href="#i-folder"/></svg><h2 id="t-projects">Projects</h2>
+      <div class="wbtns"><button class="min" aria-label="Minimize"></button><button class="max" aria-label="Maximize"></button><button class="close" aria-label="Close"></button></div></header>
+    <div class="address"><span aria-hidden="true">Address</span><span>C:\Documents and Settings\Yannis\Projects</span></div>
+    <div class="wbody explorer">
+      <aside class="taskpane">
+        <section><h3>Other places</h3>
+          <ul>
+            <li><a href="https://github.com/Yonniss" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://ionictech.dev" target="_blank" rel="noopener">IonicTech</a></li>
+          </ul>
+        </section>
+        <section><h3>Details</h3><ul><li>6 projects. Click one to see its properties.</li></ul></section>
+      </aside>
+      <div class="files">
+        <button class="icon" data-open="w-p-ionic"><svg><use href="#i-bolt"/></svg><span>IonicTech</span></button>
+        <button class="icon" data-open="w-p-alex"><svg><use href="#i-web"/></svg><span>Just Alex</span></button>
+        <button class="icon" data-open="w-p-robot"><svg><use href="#i-chip"/></svg><span>Smart Robot Car</span></button>
+        <button class="icon" data-open="w-p-term"><svg><use href="#i-term"/></svg><span>TermTimer</span></button>
+        <button class="icon" data-open="w-p-dream"><svg><use href="#i-moon"/></svg><span>Dreamcore Archive</span></button>
+        <button class="icon" data-open="w-p-3d"><svg><use href="#i-printer"/></svg><span>3D prototypes</span></button>
+      </div>
+    </div>
+    <div class="statusbar">6 objects</div>
+  </section>
+
+  <section class="win props" id="w-p-ionic" data-icon="i-bolt" data-short="IonicTech" style="--w:28rem" aria-labelledby="t-p-ionic" tabindex="-1">
+    <header class="titlebar"><svg class="ti"><use href="#i-bolt"/></svg><h2 id="t-p-ionic">IonicTech Properties</h2>
+      <div class="wbtns"><button class="min" aria-label="Minimize"></button><button class="max" aria-label="Maximize"></button><button class="close" aria-label="Close"></button></div></header>
+    <div class="wbody">
+      <div class="head"><svg><use href="#i-bolt"/></svg><div><h3>IonicTech</h3><p>Own project, in development</p></div></div>
+      <dl>
+        <dt>Description</dt><dd>A platform to bring small businesses online: lightweight websites with no heavy dependencies, optimized for local SEO and performance.</dd>
+        <dt>Built with</dt><dd>JavaScript, HTML5, CSS3, SEO, web performance</dd>
+      </dl>
+      <div class="dlg-actions"><a class="btn" href="https://ionictech.dev" target="_blank" rel="noopener">Open ionictech.dev</a><button class="btn" data-close>OK</button></div>
+    </div>
+  </section>
+
+  <section class="win props" id="w-p-alex" data-icon="i-web" data-short="Just Alex" style="--w:28rem" aria-labelledby="t-p-alex" tabindex="-1">
+    <header class="titlebar"><svg class="ti"><use href="#i-web"/></svg><h2 id="t-p-alex">Just Alex Properties</h2>
+      <div class="wbtns"><button class="min" aria-label="Minimize"></button><button class="max" aria-label="Maximize"></button><button class="close" aria-label="Close"></button></div></header>
+    <div class="wbody">
+      <div class="head"><svg><use href="#i-web"/></svg><div><h3>Just Alex</h3><p>Restaurant website, in production</p></div></div>
+      <dl>
+        <dt>Description</dt><dd>The official website of the family restaurant: design, deployment and maintenance, with local SEO. My first freelance project in production.</dd>
+        <dt>Built with</dt><dd>HTML, CSS, JavaScript, SEO</dd>
+      </dl>
+      <div class="dlg-actions"><a class="btn" href="https://justalex.es" target="_blank" rel="noopener">Open justalex.es</a><button class="btn" data-close>OK</button></div>
+    </div>
+  </section>
+
+  <section class="win props" id="w-p-robot" data-icon="i-chip" data-short="Robot Car" style="--w:28rem" aria-labelledby="t-p-robot" tabindex="-1">
+    <header class="titlebar"><svg class="ti"><use href="#i-chip"/></svg><h2 id="t-p-robot">Smart Robot Car Properties</h2>
+      <div class="wbtns"><button class="min" aria-label="Minimize"></button><button class="max" aria-label="Maximize"></button><button class="close" aria-label="Close"></button></div></header>
+    <div class="wbody">
+      <div class="head"><svg><use href="#i-chip"/></svg><div><h3>Smart Robot Car</h3><p>Hardware and mobile app</p></div></div>
+      <dl>
+        <dt>Description</dt><dd>A robot car with an ESP32 and a custom Android app that sends it movement commands over Bluetooth.</dd>
+        <dt>Built with</dt><dd>C++, ESP32, Bluetooth LE, MIT App Inventor</dd>
+      </dl>
+      <div class="dlg-actions"><a class="btn" href="https://github.com/Yonniss/RoboCar" target="_blank" rel="noopener">View on GitHub</a><button class="btn" data-close>OK</button></div>
+    </div>
+  </section>
+
+  <section class="win props" id="w-p-term" data-icon="i-term" data-short="TermTimer" style="--w:28rem" aria-labelledby="t-p-term" tabindex="-1">
+    <header class="titlebar"><svg class="ti"><use href="#i-term"/></svg><h2 id="t-p-term">TermTimer Properties</h2>
+      <div class="wbtns"><button class="min" aria-label="Minimize"></button><button class="max" aria-label="Maximize"></button><button class="close" aria-label="Close"></button></div></header>
+    <div class="wbody">
+      <div class="head"><svg><use href="#i-term"/></svg><div><h3>TermTimer</h3><p>Terminal tool</p></div></div>
+      <dl>
+        <dt>Description</dt><dd>A speedcubing timer for the terminal: scrambles for 8 puzzles (2×2 to 7×7, Megaminx and Pyraminx), ao5 and ao12 stats, DNF/+2 penalties and PB detection. Cube.exe on the desktop is its little brother.</dd>
+        <dt>Built with</dt><dd>Python, JSON, CLI</dd>
+      </dl>
+      <div class="dlg-actions"><a class="btn" href="https://github.com/Yonniss/termtimer" target="_blank" rel="noopener">View on GitHub</a><button class="btn" data-close>OK</button></div>
+    </div>
+  </section>
+
+  <section class="win props" id="w-p-dream" data-icon="i-moon" data-short="Dreamcore" style="--w:28rem" aria-labelledby="t-p-dream" tabindex="-1">
+    <header class="titlebar"><svg class="ti"><use href="#i-moon"/></svg><h2 id="t-p-dream">Dreamcore Archive Properties</h2>
+      <div class="wbtns"><button class="min" aria-label="Minimize"></button><button class="max" aria-label="Maximize"></button><button class="close" aria-label="Close"></button></div></header>
+    <div class="wbody">
+      <div class="head"><svg><use href="#i-moon"/></svg><div><h3>Dreamcore Archive</h3><p>Digital museum, bilingual</p></div></div>
+      <dl>
+        <dt>Description</dt><dd>A static museum dedicated to the dreamcore aesthetic and the old web, with a music jukebox, gallery and maximalist navigation. A room you swear you've been to, but can't remember when.</dd>
+        <dt>Built with</dt><dd>HTML, CSS, JavaScript, YouTube API</dd>
+      </dl>
+      <div class="dlg-actions"><a class="btn" href="https://dreamcorearchive.org" target="_blank" rel="noopener">Open dreamcorearchive.org</a><button class="btn" data-close>OK</button></div>
+    </div>
+  </section>
+
+  <section class="win props" id="w-p-3d" data-icon="i-printer" data-short="3D prototypes" style="--w:28rem" aria-labelledby="t-p-3d" tabindex="-1">
+    <header class="titlebar"><svg class="ti"><use href="#i-printer"/></svg><h2 id="t-p-3d">3D Prototypes Properties</h2>
+      <div class="wbtns"><button class="min" aria-label="Minimize"></button><button class="max" aria-label="Maximize"></button><button class="close" aria-label="Close"></button></div></header>
+    <div class="wbody">
+      <div class="head"><svg><use href="#i-printer"/></svg><div><h3>3D prototypes</h3><p>Hardware</p></div></div>
+      <dl>
+        <dt>Description</dt><dd>Functional enclosures and prototypes for my electronics projects, modeled in CAD and printed on my own 3D printer.</dd>
+        <dt>Built with</dt><dd>CAD modeling, 3D printing, rapid prototyping</dd>
+      </dl>
+      <div class="dlg-actions"><button class="btn" data-close>OK</button></div>
+    </div>
+  </section>
+
+  <!-- ═══ My Computer: System Properties ═══ -->
+  <section class="win" id="w-system" data-icon="i-pc" data-short="System Properties" style="--w:32rem" aria-labelledby="t-system" tabindex="-1">
+    <header class="titlebar"><svg class="ti"><use href="#i-pc"/></svg><h2 id="t-system">System Properties</h2>
+      <div class="wbtns"><button class="min" aria-label="Minimize"></button><button class="max" aria-label="Maximize"></button><button class="close" aria-label="Close"></button></div></header>
+    <div class="tabs" role="tablist">
+      <button role="tab" id="tab-general" aria-controls="pan-general" aria-selected="true">General</button>
+      <button role="tab" id="tab-hw" aria-controls="pan-hw" aria-selected="false">Hardware</button>
+      <button role="tab" id="tab-log" aria-controls="pan-log" aria-selected="false">History</button>
+    </div>
+    <div class="wbody" style="padding:0">
+      <div class="tabpanel" role="tabpanel" id="pan-general" aria-labelledby="tab-general">
+        <div class="sysinfo">
+          <span class="oslogo" aria-hidden="true">🧑‍💻</span>
+          <div>
+            <h3>System</h3>
+            <p>Yannis OS, 2026 edition</p>
+            <h3>Registered to</h3>
+            <p>Yannis Florin Ionica<br>L'Ampolla, Tarragona, Spain</p>
+            <h3>Computer</h3>
+            <p>Computer Engineering, Universitat Rovira i Virgili<br>Languages: Spanish, Catalan, Romanian, English (B1) and Japanese (learning)</p>
+            <h3>Aero theme credits</h3>
+            <p class="credits">Wallpaper built from photos by <a href="https://commons.wikimedia.org/wiki/File:Blue_sky_with_white_clouds_over_Egyptian_landscape_2026.jpg" target="_blank" rel="noopener">Serfezi</a> (CC BY 4.0) and <a href="https://commons.wikimedia.org/wiki/File:The_Lawn_After_A_Shower_(9161661782).jpg" target="_blank" rel="noopener">James Mann</a> (CC BY 2.0). <a href="https://github.com/KDE/oxygen-icons" target="_blank" rel="noopener">Oxygen</a> icons by KDE (LGPL-3.0).</p>
+          </div>
+        </div>
+      </div>
+      <div class="tabpanel tree" role="tabpanel" id="pan-hw" aria-labelledby="tab-hw">
+        <h3>Device Manager</h3>
+        <details open><summary>Software</summary><ul><li>Python</li><li>C</li><li>SQL</li><li>Bash and Linux</li><li>JavaScript</li><li>HTML / CSS</li></ul></details>
+        <details open><summary>Hardware and engineering</summary><ul><li>ESP32</li><li>KiCad (PCB design)</li><li>3D printing and CAD modeling</li><li>Circuit analysis</li><li>Bluetooth LE</li></ul></details>
+        <details><summary>Web</summary><ul><li>Full-stack</li><li>SEO</li><li>Responsive design</li><li>Web performance</li></ul></details>
+        <details><summary>Data</summary><ul><li>Statistical modeling</li><li>Data cleaning</li><li>Visualization</li><li>Google Analytics</li></ul></details>
+      </div>
+      <div class="tabpanel" role="tabpanel" id="pan-log" aria-labelledby="tab-log">
+        <h3>Experience</h3>
+        <ul class="log">
+          <li><b>Freelance web designer</b><span>Feb 2026 – now. Websites for local businesses, from briefing to maintenance.</span></li>
+          <li><b>Staff and digital, Just Alex</b><span>Dec 2025 – now (helping since 2022). Built the restaurant's website and help out front of house.</span></li>
+        </ul>
+        <h3 style="margin-top:12px">Education</h3>
+        <ul class="log">
+          <li><b>BSc Computer Engineering, URV</b><span>Sep 2026 – now</span></li>
+          <li><b>High school, Science and Technology</b><span>Institut de Camarles, 2024 – 2026</span></li>
+          <li><b><a href="https://hack4u.io/certificate/1820-4016-4110-2781" target="_blank" rel="noopener">Linux Introduction & Personalization</a></b><span>Hack4u Academy</span></li>
+          <li><b>Google Data Analytics Professional</b><span>Google, in progress</span></li>
+        </ul>
+      </div>
+      <div class="dlg-actions" style="margin:0 8px 8px"><a class="btn" href="../CV%20provisional.pdf" target="_blank" rel="noopener">Open CV</a><button class="btn" data-close>OK</button></div>
+    </div>
+  </section>
+
+  <!-- ═══ Player ═══ -->
+  <section class="win player" id="w-player" data-icon="i-player" data-short="Player" style="--w:22rem" aria-labelledby="t-player" tabindex="-1">
+    <header class="titlebar"><svg class="ti"><use href="#i-player"/></svg><h2 id="t-player">Player</h2>
+      <div class="wbtns"><button class="min" aria-label="Minimize"></button><button class="max" aria-label="Maximize"></button><button class="close" aria-label="Close"></button></div></header>
+    <div class="wbody">
+      <div class="lcd">
+        <span class="time" aria-hidden="true">00:00</span>
+        <span class="track"><span>original_riff.wav — synthesized in your browser</span></span>
+        <canvas width="320" height="60" aria-hidden="true"></canvas>
+      </div>
+      <div class="transport">
+        <button class="play" aria-label="Play" aria-pressed="false">▶</button>
+        <button class="stop" aria-label="Stop">■</button>
+      </div>
+      <ol class="playlist">
+        <li>original_riff.wav</li>
+        <li><a href="https://www.youtube.com/results?search_query=AC%2FDC+Back+in+Black" target="_blank" rel="noopener">AC/DC – Back in Black</a></li>
+        <li><a href="https://www.youtube.com/results?search_query=Led+Zeppelin+Whole+Lotta+Love" target="_blank" rel="noopener">Led Zeppelin – Whole Lotta Love</a></li>
+        <li><a href="https://www.youtube.com/results?search_query=Deep+Purple+Highway+Star" target="_blank" rel="noopener">Deep Purple – Highway Star</a></li>
+        <li><a href="https://www.youtube.com/results?search_query=Black+Sabbath+Paranoid" target="_blank" rel="noopener">Black Sabbath – Paranoid</a></li>
+        <li><a href="https://www.youtube.com/results?search_query=Iron+Maiden+The+Trooper" target="_blank" rel="noopener">Iron Maiden – The Trooper</a></li>
+        <li><a href="https://www.youtube.com/results?search_query=Metallica+Master+of+Puppets" target="_blank" rel="noopener">Metallica – Master of Puppets</a></li>
+      </ol>
+      <small>The riff plays right here: distorted guitar built with Web Audio. The rest open YouTube.</small>
+    </div>
+  </section>
+
+  <!-- ═══ Cube.exe ═══ -->
+  <section class="win" id="w-cube" data-icon="i-cube" data-short="Cube.exe" style="--w:26rem" aria-labelledby="t-cube" tabindex="-1">
+    <header class="titlebar"><svg class="ti"><use href="#i-cube"/></svg><h2 id="t-cube">Cube.exe</h2>
+      <div class="wbtns"><button class="min" aria-label="Minimize"></button><button class="max" aria-label="Maximize"></button><button class="close" aria-label="Close"></button></div></header>
+    <div class="wbody cubeapp">
+      <p class="scramble"></p>
+      <output aria-live="polite">0.00</output>
+      <button class="btn toggle">Start / stop</button>
+      <button class="btn reshuffle">New scramble</button>
+      <ol class="times" aria-label="Latest times"></ol>
+      <p class="avg" data-label="ao5"></p>
+      <p class="statusbar" style="border:0">With the window active, the space bar works too. My average: sub-20. Yours?</p>
+    </div>
+  </section>
+
+
+  <!-- ═══ Mail ═══ -->
+  <section class="win mail" id="w-mail" data-icon="i-mail" data-short="New message" style="--w:30rem" aria-labelledby="t-mail" tabindex="-1">
+    <header class="titlebar"><svg class="ti"><use href="#i-mail"/></svg><h2 id="t-mail">New message to Yannis</h2>
+      <div class="wbtns"><button class="min" aria-label="Minimize"></button><button class="max" aria-label="Maximize"></button><button class="close" aria-label="Close"></button></div></header>
+    <form class="wbody" action="mailto:yanniselflorin@gmail.com" method="get" enctype="text/plain">
+      <div class="field"><label for="m-to">To:</label><input id="m-to" value="yanniselflorin@gmail.com" readonly></div>
+      <div class="field"><label for="m-subject">Subject:</label><input id="m-subject" name="subject" placeholder="Hi Yannis"></div>
+      <textarea name="body" aria-label="Message" placeholder="Write your message here. Sending opens your email app."></textarea>
+      <div class="dlg-actions"><button class="btn" type="submit">Send</button></div>
+      <p class="links">I'm also on
+        <a href="https://github.com/Yonniss" target="_blank" rel="noopener">GitHub</a>,
+        <a href="https://www.linkedin.com/in/yannis-florin-ionica-b22506258/" target="_blank" rel="noopener">LinkedIn</a> and
+        <a href="https://instagram.com/yannisflorin25" target="_blank" rel="noopener">Instagram</a>.
+        And if you like what I do, <a href="https://ko-fi.com/yonniss" target="_blank" rel="noopener">buy me a coffee</a>.
+      </p>
+    </form>
+  </section>
+
+  <!-- ═══ Recycle Bin ═══ -->
+  <section class="win bin" id="w-bin" data-icon="i-bin" data-short="Recycle Bin" style="--w:26rem" aria-labelledby="t-bin" tabindex="-1">
+    <header class="titlebar"><svg class="ti"><use href="#i-bin"/></svg><h2 id="t-bin">Recycle Bin</h2>
+      <div class="wbtns"><button class="min" aria-label="Minimize"></button><button class="max" aria-label="Maximize"></button><button class="close" aria-label="Close"></button></div></header>
+    <div class="wbody">
+      <div class="row"><svg><use href="#i-html"/></svg><p>generic_portfolio_template.html<br><span>Deleted October 2026. Reason: dark background, "01. About me" and zero personality.</span></p></div>
+    </div>
+    <div class="statusbar">1 object</div>
+  </section>
+
+</main>
+
+<!-- ═══ JS only ═══ -->
+<div class="startmenu" id="startmenu" hidden>
+  <div class="sm-head"><span class="avatar" aria-hidden="true">Y</span>Yannis</div>
+  <div class="sm-cols">
+    <ul>
+      <li><button data-open="w-about"><svg><use href="#i-note"/></svg>About me</button></li>
+      <li><button data-open="w-projects"><svg><use href="#i-folder"/></svg>Projects</button></li>
+      <li><button data-open="w-player"><svg><use href="#i-player"/></svg>Player</button></li>
+      <li><button data-open="w-cube"><svg><use href="#i-cube"/></svg>Cube.exe</button></li>
+    </ul>
+    <ul class="right">
+      <li><a href="../en.html"><svg><use href="#i-web"/></svg>Back to the website</a></li>
+      <li><button data-open="w-system"><svg><use href="#i-pc"/></svg>My Computer</button></li>
+      <li><a href="../CV%20provisional.pdf" target="_blank" rel="noopener"><svg><use href="#i-pdf"/></svg>My CV</a></li>
+      <li><button data-open="w-mail"><svg><use href="#i-mail"/></svg>Mail</button></li>
+      <li><a href="https://github.com/Yonniss" target="_blank" rel="noopener"><svg><use href="#i-link"/></svg>GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/yannis-florin-ionica-b22506258/" target="_blank" rel="noopener"><svg><use href="#i-link"/></svg>LinkedIn</a></li>
+      <li><a href="index.html" hreflang="es" lang="es"><svg><use href="#i-web"/></svg>Versión en español</a></li>
+    </ul>
+  </div>
+  <div class="sm-foot"><button data-shutdown>Turn off computer</button></div>
+</div>
+
+<footer class="taskbar" hidden>
+  <button class="start" aria-expanded="false" aria-controls="startmenu"><span class="emoji" aria-hidden="true">🧑‍💻</span>start</button>
+  <div class="tasks" role="toolbar" aria-label="Open windows"></div>
+  <div class="tray"><a href="index.html" hreflang="es" lang="es" title="Versión en español">ES</a><span class="clock"></span></div>
+</footer>
+
+<div class="balloon" role="status" hidden>
+  <b>Welcome to Yannis OS</b>
+  Click the desktop icons to open things. Try the Player 🤘
+  <button aria-label="Close notice">×</button>
+</div>
+
+
+<div class="overlay boot" hidden aria-hidden="true"><div class="logo">Yannis <span>OS</span></div><div class="bar"><i></i></div></div>
+
+<div class="overlay bsod" hidden role="alertdialog" aria-label="Error">
+  <div>
+    <h2>Yannis OS</h2>
+    <p>A fatal error has occurred: TOO_MUCH_ROCK (0x000000AC).</p>
+    <p>The system detected an excess of riffs and has been halted to protect your speakers.</p>
+    <p>Press any key to continue _</p>
+  </div>
+</div>
+
+<div class="overlay shutdown" hidden role="dialog" aria-label="Computer turned off">
+  <p>It's now safe to turn off your computer.</p>
+  <button class="btn" data-boot>Turn it back on</button>
+</div>
+
+</body>
+</html>
